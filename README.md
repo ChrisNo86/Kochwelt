@@ -43,9 +43,6 @@ The project focuses on:
 
 ## 🖥 Preview
 
-> Add a screenshot of your homepage and name it `preview.jpg`  
-> Store it inside the root directory (or inside an `/assets` folder if preferred).
-
 Example:
 
 ![Project Preview](./preview.jpg)
