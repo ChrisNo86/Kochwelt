@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -17,8 +17,14 @@
         <!-- Recipe -->
         <div class="recipe_container--recipe">
           <div class="recipe_container--recipe--short_info">
-            <h1 class="recipe_container--recipe--short_info--heading">Ente mit süß-saurer Sauce</h1>
-            <img class="recipe_container--recipe--short_info--img" src="./img/duck_with_sweet_and_sour_sauce.jpg" alt="Ein Bild vom Fertigem essen" />
+            <h1 class="recipe_container--recipe--short_info--heading">
+              Ente mit süß-saurer Sauce
+            </h1>
+            <img
+              class="recipe_container--recipe--short_info--img"
+              src="./img/duck_with_sweet_and_sour_sauce.jpg"
+              alt="Ein Bild vom Fertigem essen"
+            />
             <h6 class="recipe_container--recipe--short_info--img_source">
               Bild von
               <a
@@ -26,24 +32,32 @@
                 >Anil sharma</a
               >
               auf
-              <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389">Pixabay</a>
+              <a
+                href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389"
+                >Pixabay</a
+              >
             </h6>
             <div class="recipe_container--recipe--short_info--details">
               <span class="recipe_container--recipe--short_info--details--box"
-                ><img class="recipe_container--recipe--short_info--details--box--img" src="./img/icons/clock-regular.svg" alt="Clock Logo" />40
-                Min</span
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo"
+                />40 Min</span
               >
               <span class="recipe_container--recipe--short_info--details--box"
                 ><img
                   class="recipe_container--recipe--short_info--details--box--img"
                   src="./img/icons/brain-solid.svg"
-                  alt="Brain Logo" />normal</span
+                  alt="Brain Logo"
+                />normal</span
               >
               <span class="recipe_container--recipe--short_info--details--box"
                 ><img
                   class="recipe_container--recipe--short_info--details--box--img"
                   src="./img/icons/calendar-alt-regular.svg"
-                  alt="Calendar Logo" />10.08.2024</span
+                  alt="Calendar Logo"
+                />10.08.2024</span
               >
             </div>
           </div>
@@ -52,9 +66,22 @@
         <div class="recipe_container--ingredients">
           <form class="recipe_container--ingredients--input">
             <label for="portions">Zutaten für</label>
-            <input type="number" id="portions" name="portions" min="1" max="10" value="1" required />
-            <button onclick="CalculatePortions(event)" type="submit">Portionen</button>
-            <span id="error-message" class="recipe_container--ingredients--input--error"></span>
+            <input
+              type="number"
+              id="portions"
+              name="portions"
+              min="1"
+              max="10"
+              value="1"
+              required
+            />
+            <button onclick="CalculatePortions(event)" type="submit">
+              Portionen
+            </button>
+            <span
+              id="error-message"
+              class="recipe_container--ingredients--input--error"
+            ></span>
           </form>
         </div>
         <!-- Ingredients List -->
@@ -119,32 +146,62 @@
         <!-- Preparation -->
         <div class="recipe_container--preparation">
           <div class="recipe_container--preparation--short_info">
-            <h2 class="recipe_container--preparation--short_info--heading">Zubereitung</h2>
+            <h2 class="recipe_container--preparation--short_info--heading">
+              Zubereitung
+            </h2>
             <div class="recipe_container--preparation--short_info--details">
-              <span class="recipe_container--preparation--short_info--details--box"
-                ><img class="recipe_container--preparation--short_info--details--box--img" src="./img/icons/clock-regular.svg" alt="Clock Logo" />ca
-                40 Minuten</span
-              >
-              <span class="recipe_container--preparation--short_info--details--box"
+              <span
+                class="recipe_container--preparation--short_info--details--box"
                 ><img
                   class="recipe_container--preparation--short_info--details--box--img"
                   src="./img/icons/clock-regular.svg"
-                  alt="Clock Logo" />Gesamtzeit ca 1Std. 25Minuten</span
+                  alt="Clock Logo"
+                />ca 40 Minuten</span
+              >
+              <span
+                class="recipe_container--preparation--short_info--details--box"
+                ><img
+                  class="recipe_container--preparation--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo"
+                />Gesamtzeit ca 1Std. 25Minuten</span
               >
             </div>
           </div>
           <p class="recipe_container--preparation--textarea">
-            Die Fettschicht der Entenbrust mit einem scharfen Messer leicht einschneiden und mit Salz sowie Pfeffer würzen. Die Entenbrust in eine
-            Backform legen und bei 180 °C etwa 30 bis 45 Minuten garen. Währenddessen das Gemüse gründlich waschen, schälen und klein schneiden.
+            Die Fettschicht der Entenbrust mit einem scharfen Messer
+            rautenförmig einschneiden, dabei nicht ins Fleisch schneiden.
+            Anschließend großzügig mit Salz und frisch gemahlenem Pfeffer
+            würzen.
+
             <br /><br />
-            In einer großen Pfanne Essig, Zucker, Salz, Tomatenmark, Sojasauce und Öl zum Kochen bringen. Die aufgelöste Speisestärke einrühren und
-            mit Ananassaft ablöschen. Falls die Sauce süßer sein soll, etwas Wasser hinzufügen. Das Gemüse in die Sauce geben und zusammen garen
-            lassen.
+
+            Die Entenbrust zunächst mit der Hautseite nach unten in eine kalte
+            Pfanne legen und langsam erhitzen. So kann das Fett kontrolliert
+            auslassen und die Haut wird besonders knusprig. Etwa 6–8 Minuten
+            braten, bis sie goldbraun ist. Danach wenden und weitere 2–3 Minuten
+            anbraten. Anschließend im vorgeheizten Ofen bei 180 °C
+            Ober-/Unterhitze für ca. 10–15 Minuten fertig garen, je nach
+            gewünschtem Gargrad.
+
             <br /><br />
-            Wenn die Ente knusprig ist, in dünne Scheiben schneiden. Sollte sie noch nicht ganz durchgegart sein, für weitere 10 Minuten in den Ofen
-            zurückstellen.
+
+            Für die süß-saure Sauce Essig, Zucker, Sojasauce und Tomatenmark in
+            einer Pfanne erhitzen. Die Speisestärke mit etwas Wasser glatt
+            rühren und unter ständigem Rühren einarbeiten, bis die Sauce leicht
+            andickt. Mit Ananassaft abschmecken und je nach Geschmack mit etwas
+            Honig oder zusätzlichem Essig ausbalancieren.
+
             <br /><br />
-            Die Ente zusammen mit Reis und der Sauce anrichten.
+
+            Paprika, Karotten und Zwiebeln in mundgerechte Stücke schneiden und
+            kurz in der Sauce mitgaren, sodass sie bissfest bleiben.
+
+            <br /><br />
+
+            Die Entenbrust nach dem Garen einige Minuten ruhen lassen, dann in
+            feine Scheiben schneiden. Mit duftendem Jasminreis anrichten und
+            großzügig mit der süß-sauren Sauce überziehen.
           </p>
         </div>
       </section>
@@ -154,9 +211,15 @@
           <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
           <div class="writer_container--writer--person">
             <div class="writer_container--writer--person--img_container">
-              <img class="writer_container--writer--person--img_container--img" src="./img/profile_ai.png" alt="Bild Autor" />
+              <img
+                class="writer_container--writer--person--img_container--img"
+                src="./img/profile_ai.png"
+                alt="Bild Autor"
+              />
             </div>
-            <span class="writer_container--writer--person--name"> Mirko </span>
+            <span class="writer_container--writer--person--name">
+              Chef Chris
+            </span>
           </div>
         </div>
       </section>

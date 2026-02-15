@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -17,8 +17,14 @@
         <!-- Recipe -->
         <div class="recipe_container--recipe">
           <div class="recipe_container--recipe--short_info">
-            <h1 class="recipe_container--recipe--short_info--heading">Französische Croissant</h1>
-            <img class="recipe_container--recipe--short_info--img" src="./img/croissant.jpg" alt="Ein Bild von Französische Croissant" />
+            <h1 class="recipe_container--recipe--short_info--heading">
+              Französische Croissant
+            </h1>
+            <img
+              class="recipe_container--recipe--short_info--img"
+              src="./img/croissant.jpg"
+              alt="Ein Bild von Französische Croissant"
+            />
             <h6 class="recipe_container--recipe--short_info--img_source">
               Bild von
               <a
@@ -26,24 +32,32 @@
                 >DC Williams</a
               >
               auf
-              <a href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8540696">Pixabay</a>
+              <a
+                href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8540696"
+                >Pixabay</a
+              >
             </h6>
             <div class="recipe_container--recipe--short_info--details">
               <span class="recipe_container--recipe--short_info--details--box"
-                ><img class="recipe_container--recipe--short_info--details--box--img" src="./img/icons/clock-regular.svg" alt="Clock Logo" />60
-                Min</span
+                ><img
+                  class="recipe_container--recipe--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo"
+                />60 Min</span
               >
               <span class="recipe_container--recipe--short_info--details--box"
                 ><img
                   class="recipe_container--recipe--short_info--details--box--img"
                   src="./img/icons/brain-solid.svg"
-                  alt="Brain Logo" />simple</span
+                  alt="Brain Logo"
+                />simple</span
               >
               <span class="recipe_container--recipe--short_info--details--box"
                 ><img
                   class="recipe_container--recipe--short_info--details--box--img"
                   src="./img/icons/calendar-alt-regular.svg"
-                  alt="Calendar Logo" />10.08.2024</span
+                  alt="Calendar Logo"
+                />10.08.2024</span
               >
             </div>
           </div>
@@ -52,9 +66,22 @@
         <div class="recipe_container--ingredients">
           <form class="recipe_container--ingredients--input">
             <label for="portions">Zutaten für</label>
-            <input type="number" id="portions" name="portions" min="1" max="10" value="1" required />
-            <button onclick="CalculatePortions(event)" type="submit">Portionen</button>
-            <span id="error-message" class="recipe_container--ingredients--input--error"></span>
+            <input
+              type="number"
+              id="portions"
+              name="portions"
+              min="1"
+              max="10"
+              value="1"
+              required
+            />
+            <button onclick="CalculatePortions(event)" type="submit">
+              Portionen
+            </button>
+            <span
+              id="error-message"
+              class="recipe_container--ingredients--input--error"
+            ></span>
           </form>
         </div>
         <!-- Ingredients List -->
@@ -84,34 +111,54 @@
         <!-- Preparation -->
         <div class="recipe_container--preparation">
           <div class="recipe_container--preparation--short_info">
-            <h2 class="recipe_container--preparation--short_info--heading">Zubereitung</h2>
+            <h2 class="recipe_container--preparation--short_info--heading">
+              Zubereitung
+            </h2>
             <div class="recipe_container--preparation--short_info--details">
-              <span class="recipe_container--preparation--short_info--details--box"
-                ><img class="recipe_container--preparation--short_info--details--box--img" src="./img/icons/clock-regular.svg" alt="Clock Logo" />ca
-                60 Minuten</span
-              >
-              <span class="recipe_container--preparation--short_info--details--box"
+              <span
+                class="recipe_container--preparation--short_info--details--box"
                 ><img
                   class="recipe_container--preparation--short_info--details--box--img"
                   src="./img/icons/clock-regular.svg"
-                  alt="Clock Logo" />Gesamtzeit ca 2 Std. 50 Minuten</span
+                  alt="Clock Logo"
+                />ca 60 Minuten</span
+              >
+              <span
+                class="recipe_container--preparation--short_info--details--box"
+                ><img
+                  class="recipe_container--preparation--short_info--details--box--img"
+                  src="./img/icons/clock-regular.svg"
+                  alt="Clock Logo"
+                />Gesamtzeit ca 2 Std. 50 Minuten</span
               >
             </div>
           </div>
           <p class="recipe_container--preparation--textarea">
-            Für französische Croissants beginne damit, einen Hefeteig vorzubereiten. Mische Mehl, Zucker und Salz in einer Schüssel. Löse die Hefe in
-            lauwarmer Milch auf, gib sie zu den trockenen Zutaten und knete den Teig glatt. Lasse ihn abgedeckt etwa eine Stunde an einem warmen Ort
-            gehen.
+            Französische Croissants stehen für feinste Backkunst und echte
+            Handwerkstradition. Außen goldbraun und knusprig, innen zart, luftig
+            und herrlich buttrig – ihre charakteristische blättrige Struktur
+            entsteht durch das mehrfache Falten und Ausrollen des Teigs, das
+            sogenannte Tourieren.
+
             <br /><br />
-            Bereite währenddessen die Butter vor, indem du sie zwischen Backpapier zu einem 20x20 cm großen Rechteck ausrollst. Rolle den
-            aufgegangenen Teig auf 40x20 cm aus, lege die Butter in die Mitte, klappe die Ränder darüber und rolle den Teig erneut aus. Falten ihn in
-            Drittel und wiederhole dies 3-4 Mal, wobei der Teig jeweils 30 Minuten im Kühlschrank ruhen sollte.
+
+            Für die Herstellung wird zunächst ein Hefeteig aus Mehl, Hefe,
+            Milch, Zucker und einer Prise Salz vorbereitet. Nach der ersten
+            Ruhephase wird kalte Butter in den Teig eingearbeitet und mehrfach
+            eingeschlagen. Zwischen den einzelnen Touren muss der Teig stets gut
+            gekühlt werden, damit die Butterschichten stabil bleiben.
+
             <br /><br />
-            Rolle den Teig auf 0,5 cm Dicke aus und schneide ihn in Dreiecke. Rolle die Dreiecke von der breiten Seite her auf, forme die Croissants
-            und lasse sie 30-45 Minuten gehen. Heize den Ofen auf 200°C vor, bestreiche die Croissants mit einem verquirlten Ei und backe sie 15-20
-            Minuten, bis sie goldbraun und knusprig sind.
+
+            Anschließend wird der Teig dünn ausgerollt, in Dreiecke geschnitten
+            und von der breiten Seite her locker aufgerollt. Nach einer weiteren
+            Gehzeit werden die Croissants mit Eigelb bestrichen und bei 190°C
+            Ober-/Unterhitze gebacken, bis sie goldbraun aufgegangen sind.
+
             <br /><br />
-            Lass die Croissants auf einem Gitter auskühlen und genieße sie frisch. Viel Spaß beim Backen!
+
+            Am besten schmecken sie frisch aus dem Ofen – knusprig, duftend und
+            noch leicht warm.
           </p>
         </div>
       </section>
@@ -121,9 +168,15 @@
           <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
           <div class="writer_container--writer--person">
             <div class="writer_container--writer--person--img_container">
-              <img class="writer_container--writer--person--img_container--img" src="./img/profile_ai.png" alt="Bild Autor" />
+              <img
+                class="writer_container--writer--person--img_container--img"
+                src="./img/profile_ai.png"
+                alt="Bild Autor"
+              />
             </div>
-            <span class="writer_container--writer--person--name"> Mirko </span>
+            <span class="writer_container--writer--person--name">
+              Chef Chris
+            </span>
           </div>
         </div>
       </section>
