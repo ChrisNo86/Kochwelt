@@ -1,27 +1,60 @@
-# Kochwelt
+# 🍽 Kochwelt  
 
-### 📋 Overview
+Responsive recipe website built with HTML, CSS and JavaScript.  
+Developed as part of the **Developer Akademie** training program.
 
-## 🛠️ Built with
+---
 
-- HTML
-- CSS / SCSS
-- JS
+## 🚀 Tech Stack
 
-## ⚙️ How to Use
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Responsive](https://img.shields.io/badge/Responsive-Design-green)
 
-1. Clone the repository:
+---
 
-   ```bash
+## 📌 Overview
 
-   ```
+Kochwelt is a fully responsive multi-page recipe website.
 
-2. Navigate to the project directory:
-   ```bash
-   cd Developer-Akademie-kochwelt
-   ```
+The project focuses on:
 
-## ✍️ Author
+- Semantic HTML structure  
+- Structured multi-page layout  
+- Responsive design using Flexbox & Grid  
+- Clean folder organization  
+- Reusable layout components  
+- Clear separation of HTML, CSS and JavaScript  
 
-- [Webiste](https://christian-noack.com)
-- [Github](https://github.com/ChrisNo86)
+---
+
+## 🎯 Features
+
+- Multi-page recipe structure  
+- Daily recipe highlight  
+- Individual recipe pages  
+- Contact page with form  
+- Legal pages (Imprint & Privacy Policy)  
+- Responsive navigation  
+- Clean visual hierarchy  
+
+---
+
+## 🖥 Preview
+
+> Add a screenshot of your homepage and name it `preview.jpg`  
+> Store it inside the root directory (or inside an `/assets` folder if preferred).
+
+Example:
+
+![Project Preview](./preview.jpg)
+
+---
+
+## ⚙ Installation
+
+```bash
+git clone https://github.com/yourusername/kochwelt.git
+cd kochwelt
+open index.html
