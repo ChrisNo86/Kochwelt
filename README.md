@@ -52,6 +52,6 @@ Example:
 ## ⚙ Installation
 
 ```bash
-git clone https://github.com/yourusername/kochwelt.git
+git clone https://github.com/ChrisNo86/kochwelt.git
 cd kochwelt
 open index.html
