@@ -1,230 +1,191 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="icon" href="./img/icons/fav.ico" type="image/x-icon" />
-    <script src="./js/script.js" defer></script>
-    <title>Kochwelt - Ente mit süß-saurer Sauce</title>
-  </head>
-  <body>
-    <!-- Nav -->
-    <div id="nav"></div>
-    <main class="content">
-      <!-- Recipe Container -->
-      <section class="recipe_container">
-        <!-- Recipe -->
-        <div class="recipe_container--recipe">
-          <div class="recipe_container--recipe--short_info">
-            <h1 class="recipe_container--recipe--short_info--heading">
-              Ente mit süß-saurer Sauce
-            </h1>
-            <img
-              class="recipe_container--recipe--short_info--img"
-              src="./img/duck_with_sweet_and_sour_sauce.jpg"
-              alt="Ein Bild vom Fertigem essen"
-            />
-            <h6 class="recipe_container--recipe--short_info--img_source">
-              Bild von
-              <a
-                href="https://pixabay.com/de/users/anilsharma26-13475484/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389"
-                >Anil sharma</a
-              >
-              auf
-              <a
-                href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389"
-                >Pixabay</a
-              >
-            </h6>
-            <div class="recipe_container--recipe--short_info--details">
-              <span class="recipe_container--recipe--short_info--details--box"
-                ><img
-                  class="recipe_container--recipe--short_info--details--box--img"
-                  src="./img/icons/clock-regular.svg"
-                  alt="Clock Logo"
-                />40 Min</span
-              >
-              <span class="recipe_container--recipe--short_info--details--box"
-                ><img
-                  class="recipe_container--recipe--short_info--details--box--img"
-                  src="./img/icons/brain-solid.svg"
-                  alt="Brain Logo"
-                />normal</span
-              >
-              <span class="recipe_container--recipe--short_info--details--box"
-                ><img
-                  class="recipe_container--recipe--short_info--details--box--img"
-                  src="./img/icons/calendar-alt-regular.svg"
-                  alt="Calendar Logo"
-                />10.08.2024</span
-              >
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="./img/icons/fav.ico" type="image/x-icon" />
+  <script src="./js/script.js" defer></script>
+  <title>Kochwelt - Ente mit süß-saurer Sauce</title>
+</head>
+
+<body>
+  <!-- Nav -->
+  <div id="nav"></div>
+  <main class="content">
+    <!-- Recipe Container -->
+    <section class="recipe_container">
+      <!-- Recipe -->
+      <div class="recipe_container--recipe">
+        <div class="recipe_container--recipe--short_info">
+          <h1 class="recipe_container--recipe--short_info--heading">
+            Ente mit süß-saurer Sauce
+          </h1>
+          <img class="recipe_container--recipe--short_info--img" src="./img/duck_with_sweet_and_sour_sauce.jpg"
+            alt="Ein Bild vom Fertigem essen" />
+          <h6 class="recipe_container--recipe--short_info--img_source">
+            Bild von
+            <a
+              href="https://pixabay.com/de/users/anilsharma26-13475484/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389">Anil
+              sharma</a>
+            auf
+            <a
+              href="https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7279389">Pixabay</a>
+          </h6>
+          <div class="recipe_container--recipe--short_info--details">
+            <span class="recipe_container--recipe--short_info--details--box"><img
+                class="recipe_container--recipe--short_info--details--box--img" src="./img/icons/clock-regular.svg"
+                alt="Clock Logo" />40 Min</span>
+            <span class="recipe_container--recipe--short_info--details--box"><img
+                class="recipe_container--recipe--short_info--details--box--img" src="./img/icons/brain-solid.svg"
+                alt="Brain Logo" />normal</span>
+            <span class="recipe_container--recipe--short_info--details--box"><img
+                class="recipe_container--recipe--short_info--details--box--img"
+                src="./img/icons/calendar-alt-regular.svg" alt="Calendar Logo" />10.08.2024</span>
           </div>
         </div>
-        <!-- Ingredients Input -->
-        <div class="recipe_container--ingredients">
-          <form class="recipe_container--ingredients--input">
-            <label for="portions">Zutaten für</label>
-            <input
-              type="number"
-              id="portions"
-              name="portions"
-              min="1"
-              max="10"
-              value="1"
-              required
-            />
-            <button onclick="CalculatePortions(event)" type="submit">
-              Portionen
-            </button>
-            <span
-              id="error-message"
-              class="recipe_container--ingredients--input--error"
-            ></span>
-          </form>
-        </div>
-        <!-- Ingredients List -->
-        <table class="recipe_container--ingredients_list" id="ingredientsTable">
-          <tr>
-            <td>1 Entenbrustfilet(s), frische</td>
-          </tr>
-          <tr>
-            <td>1 Karotte(n)</td>
-          </tr>
-          <tr>
-            <td>1 Paprikaschote(n)</td>
-          </tr>
-          <tr>
-            <td>2 Blumenkohlröschen</td>
-          </tr>
-          <tr>
-            <td>2 Brokkoliröschen</td>
-          </tr>
-          <tr>
-            <td>1 Zucchini</td>
-          </tr>
-          <tr>
-            <td>1 Frühlingszwiebel(n)</td>
-          </tr>
-          <tr>
-            <td>1 Handvoll Bohnen</td>
-          </tr>
-          <tr>
-            <td>Salz und Pfeffer</td>
-          </tr>
-          <th>Für die Sauce</th>
-          <tr>
-            <td>90ml Weißweinessig</td>
-          </tr>
+      </div>
+      <!-- Ingredients Input -->
+      <div class="recipe_container--ingredients">
+        <form class="recipe_container--ingredients--input">
+          <label for="portions">Zutaten für</label>
+          <input type="number" id="portions" name="portions" min="1" max="10" value="1" required />
+          <button onclick="CalculatePortions(event)" type="submit">
+            Portionen
+          </button>
+          <span id="error-message" class="recipe_container--ingredients--input--error"></span>
+        </form>
+      </div>
+      <!-- Ingredients List -->
+      <table class="recipe_container--ingredients_list" id="ingredientsTable">
+        <tr>
+          <td>1 Entenbrustfilet(s), frische</td>
+        </tr>
+        <tr>
+          <td>1 Karotte(n)</td>
+        </tr>
+        <tr>
+          <td>1 Paprikaschote(n)</td>
+        </tr>
+        <tr>
+          <td>2 Blumenkohlröschen</td>
+        </tr>
+        <tr>
+          <td>2 Brokkoliröschen</td>
+        </tr>
+        <tr>
+          <td>1 Zucchini</td>
+        </tr>
+        <tr>
+          <td>1 Frühlingszwiebel(n)</td>
+        </tr>
+        <tr>
+          <td>1 Handvoll Bohnen</td>
+        </tr>
+        <tr>
+          <td>Salz und Pfeffer</td>
+        </tr>
+        <th>Für die Sauce</th>
+        <tr>
+          <td>90ml Weißweinessig</td>
+        </tr>
 
-          <tr>
-            <td>4EL Zucker</td>
-          </tr>
-          <tr>
-            <td>1TL Salz</td>
-          </tr>
-          <tr>
-            <td>2EL Tomatenmark</td>
-          </tr>
-          <tr>
-            <td>1EL Sojasauce, dunkle</td>
-          </tr>
-          <tr>
-            <td>2EL Sonnenblumenöl</td>
-          </tr>
-          <tr>
-            <td>2EL Speisestärke, in etwas Wasser aufgelöst</td>
-          </tr>
-          <tr>
-            <td>100ml Ananassaft</td>
-          </tr>
-          <tr>
-            <td>25ml Wasser</td>
-          </tr>
-        </table>
-        <!-- Preparation -->
-        <div class="recipe_container--preparation">
-          <div class="recipe_container--preparation--short_info">
-            <h2 class="recipe_container--preparation--short_info--heading">
-              Zubereitung
-            </h2>
-            <div class="recipe_container--preparation--short_info--details">
-              <span
-                class="recipe_container--preparation--short_info--details--box"
-                ><img
-                  class="recipe_container--preparation--short_info--details--box--img"
-                  src="./img/icons/clock-regular.svg"
-                  alt="Clock Logo"
-                />ca 40 Minuten</span
-              >
-              <span
-                class="recipe_container--preparation--short_info--details--box"
-                ><img
-                  class="recipe_container--preparation--short_info--details--box--img"
-                  src="./img/icons/clock-regular.svg"
-                  alt="Clock Logo"
-                />Gesamtzeit ca 1Std. 25Minuten</span
-              >
-            </div>
-          </div>
-          <p class="recipe_container--preparation--textarea">
-            Die Fettschicht der Entenbrust mit einem scharfen Messer
-            rautenförmig einschneiden, dabei nicht ins Fleisch schneiden.
-            Anschließend großzügig mit Salz und frisch gemahlenem Pfeffer
-            würzen.
-
-            <br /><br />
-
-            Die Entenbrust zunächst mit der Hautseite nach unten in eine kalte
-            Pfanne legen und langsam erhitzen. So kann das Fett kontrolliert
-            auslassen und die Haut wird besonders knusprig. Etwa 6–8 Minuten
-            braten, bis sie goldbraun ist. Danach wenden und weitere 2–3 Minuten
-            anbraten. Anschließend im vorgeheizten Ofen bei 180 °C
-            Ober-/Unterhitze für ca. 10–15 Minuten fertig garen, je nach
-            gewünschtem Gargrad.
-
-            <br /><br />
-
-            Für die süß-saure Sauce Essig, Zucker, Sojasauce und Tomatenmark in
-            einer Pfanne erhitzen. Die Speisestärke mit etwas Wasser glatt
-            rühren und unter ständigem Rühren einarbeiten, bis die Sauce leicht
-            andickt. Mit Ananassaft abschmecken und je nach Geschmack mit etwas
-            Honig oder zusätzlichem Essig ausbalancieren.
-
-            <br /><br />
-
-            Paprika, Karotten und Zwiebeln in mundgerechte Stücke schneiden und
-            kurz in der Sauce mitgaren, sodass sie bissfest bleiben.
-
-            <br /><br />
-
-            Die Entenbrust nach dem Garen einige Minuten ruhen lassen, dann in
-            feine Scheiben schneiden. Mit duftendem Jasminreis anrichten und
-            großzügig mit der süß-sauren Sauce überziehen.
-          </p>
-        </div>
-      </section>
-      <!-- Writer Container -->
-      <section class="writer_container">
-        <div class="writer_container--writer">
-          <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
-          <div class="writer_container--writer--person">
-            <div class="writer_container--writer--person--img_container">
-              <img
-                class="writer_container--writer--person--img_container--img"
-                src="./img/profile_ai.png"
-                alt="Bild Autor"
-              />
-            </div>
-            <span class="writer_container--writer--person--name">
-              Chef Chris
-            </span>
+        <tr>
+          <td>4EL Zucker</td>
+        </tr>
+        <tr>
+          <td>1TL Salz</td>
+        </tr>
+        <tr>
+          <td>2EL Tomatenmark</td>
+        </tr>
+        <tr>
+          <td>1EL Sojasauce, dunkle</td>
+        </tr>
+        <tr>
+          <td>2EL Sonnenblumenöl</td>
+        </tr>
+        <tr>
+          <td>2EL Speisestärke, in etwas Wasser aufgelöst</td>
+        </tr>
+        <tr>
+          <td>100ml Ananassaft</td>
+        </tr>
+        <tr>
+          <td>25ml Wasser</td>
+        </tr>
+      </table>
+      <!-- Preparation -->
+      <div class="recipe_container--preparation">
+        <div class="recipe_container--preparation--short_info">
+          <h2 class="recipe_container--preparation--short_info--heading">
+            Zubereitung
+          </h2>
+          <div class="recipe_container--preparation--short_info--details">
+            <span class="recipe_container--preparation--short_info--details--box"><img
+                class="recipe_container--preparation--short_info--details--box--img" src="./img/icons/clock-regular.svg"
+                alt="Clock Logo" />ca 40 Minuten</span>
+            <span class="recipe_container--preparation--short_info--details--box"><img
+                class="recipe_container--preparation--short_info--details--box--img" src="./img/icons/clock-regular.svg"
+                alt="Clock Logo" />Gesamtzeit ca 1Std. 25Minuten</span>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- Footer Container -->
-    <div id="footer"></div>
-  </body>
+        <p class="recipe_container--preparation--textarea">
+          Die Fettschicht der Entenbrust mit einem scharfen Messer
+          rautenförmig einschneiden, dabei nicht ins Fleisch schneiden.
+          Anschließend großzügig mit Salz und frisch gemahlenem Pfeffer
+          würzen.
+
+          <br /><br />
+
+          Die Entenbrust zunächst mit der Hautseite nach unten in eine kalte
+          Pfanne legen und langsam erhitzen. So kann das Fett kontrolliert
+          auslassen und die Haut wird besonders knusprig. Etwa 6–8 Minuten
+          braten, bis sie goldbraun ist. Danach wenden und weitere 2–3 Minuten
+          anbraten. Anschließend im vorgeheizten Ofen bei 180 °C
+          Ober-/Unterhitze für ca. 10–15 Minuten fertig garen, je nach
+          gewünschtem Gargrad.
+
+          <br /><br />
+
+          Für die süß-saure Sauce Essig, Zucker, Sojasauce und Tomatenmark in
+          einer Pfanne erhitzen. Die Speisestärke mit etwas Wasser glatt
+          rühren und unter ständigem Rühren einarbeiten, bis die Sauce leicht
+          andickt. Mit Ananassaft abschmecken und je nach Geschmack mit etwas
+          Honig oder zusätzlichem Essig ausbalancieren.
+
+          <br /><br />
+
+          Paprika, Karotten und Zwiebeln in mundgerechte Stücke schneiden und
+          kurz in der Sauce mitgaren, sodass sie bissfest bleiben.
+
+          <br /><br />
+
+          Die Entenbrust nach dem Garen einige Minuten ruhen lassen, dann in
+          feine Scheiben schneiden. Mit duftendem Jasminreis anrichten und
+          großzügig mit der süß-sauren Sauce überziehen.
+        </p>
+      </div>
+    </section>
+    <!-- Writer Container -->
+    <section class="writer_container">
+      <div class="writer_container--writer">
+        <h3 class="writer_container--writer--heading">Rezept erstellt von</h3>
+        <div class="writer_container--writer--person">
+          <div class="writer_container--writer--person--img_container">
+            <img class="writer_container--writer--person--img_container--img" src="./img/profile_ai.png"
+              alt="Bild Autor" />
+          </div>
+          <span class="writer_container--writer--person--name">
+            Chef Chris
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer Container -->
+  <div id="footer"></div>
+</body>
+
 </html>
